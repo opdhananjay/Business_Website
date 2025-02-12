@@ -1,0 +1,45 @@
+.HomeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Full screen */
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* Light gradient for premium look */
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+}
+
+.hero-title {
+    font-size: 3rem; /* Default for desktop */
+    font-weight: 800;
+    color: #333;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtext {
+    font-size: 1.25rem;
+    max-width: 600px;
+    color: #555;
+    margin-top: 15px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem; /* Adjust for tablets */
+    }
+    .hero-subtext {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem; /* Adjust for mobile */
+    }
+    .hero-subtext {
+        font-size: 0.95rem;
+    }
+}
